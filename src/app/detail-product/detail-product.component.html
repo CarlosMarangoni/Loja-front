@@ -1,0 +1,30 @@
+<div class="cotainer main-container">
+    <div class="card text-center mt-5">
+        <div class="card-header">
+            {{produto?.nome}} 
+
+        </div>
+        <div class="card-header">
+            imagem 
+
+        </div>
+        <div class="card-body">
+            {{produto?.descricao}} 
+
+        </div>
+        <div class="card-footer">
+            <span>{{produto?.valor}} </span>
+            <a class="btn btn-primary">
+                <span class="fa fa-shopping-cart"> </span>
+                Comprar
+            </a>
+            <span>
+                <img class="btn" src="/assets/plus.svg">
+                <input type="number" disabled style="width:30px;">
+                <img class="btn" src="/assets/minus.svg">
+            </span> 
+        </div>
+    </div>
+
+
+</div>

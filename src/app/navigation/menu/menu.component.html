@@ -1,0 +1,30 @@
+<nav class="navbar shadow justify-content-between p-0 m-0">
+    <div class="container1">
+        <div class="navbar-brand">
+            <img src="/assets/suplemento1.png" alt="" width="40" height="34" class="d-inline-block align-text-top">
+            Omnipower
+        </div>
+    </div>
+    <div>
+        <div class="menus"></div>
+        <div>
+            <a class="btn" *ngFor="let menu of menus" [routerLink]="[menu.link]" (click)="setActive(menu)"
+                [class.active]="menu === activeMenu">
+
+                {{menu.name}}
+
+            </a>
+            <a class="btn dropdown-toggle" mat-button [matMenuTriggerFor]="menu">Cadastrar</a>
+            <mat-menu #menu="matMenu">
+                <a mat-menu-item [routerLink] ="['/fornecedores']">Fornecedores</a>
+                <a mat-menu-item>Produtos</a>
+            </mat-menu>
+            <a class="btn login-btn">Login</a>
+        </div>
+    </div>
+
+
+
+
+
+</nav>

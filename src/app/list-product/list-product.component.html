@@ -1,0 +1,33 @@
+<div class="container main-container">
+    <img class="mb-5"src="/assets/omnipower.jpeg" alt="" width="100%">
+    
+    <div class="row text-center">
+        <div *ngFor="let produto of produtos" class="col-md-3" style="padding-bottom: 30px;">
+            <div class="card h-100">
+                <a class="text-decoration-none" [routerLink]="['/produtos',produto.id]">
+                <h4 class="card-title"> {{produto.nome}}</h4>
+            </a>
+                <div class="card-body">                    
+                  imagem
+                </div>
+                <div  class="card-body">                    
+                    <div>
+                      {{produto.valor}}
+                    </div>
+                </div>
+
+                <div class="card-footer">
+                    <a class="btn btn-primary">
+                        <span class="fa fa-shopping-cart"> </span>
+                        Comprar
+                    </a>
+                    <span>
+                        <img class="btn" src="/assets/plus.svg">
+                        <input type="number" disabled style="width:30px;">
+                        <img class="btn" src="/assets/minus.svg">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

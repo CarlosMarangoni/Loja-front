@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+.home{
+    background: blueviolet;
+}
+
+.mainnav{
+    background-color:yellowgreen;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.secnav{
+    background-color: yellowgreen;
+    border: 1px solid;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.secnav:hover{
+    background-color: yellow;
+}
+
+.active{
+    background-color: yellow;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
