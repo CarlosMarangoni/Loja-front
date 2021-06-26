@@ -10,6 +10,7 @@
     <table class="table table-bordered">
         <thead>
             <tr>
+                <th>Código</th>
                 <th>CNPJ</th>
                 <th>Nome</th>
                 <th>E-mail</th>
@@ -19,10 +20,13 @@
         </thead>
         <tbody>
             <tr *ngFor="let fornecedor of fornecedores">
+                <td>{{fornecedor.id}}</td>
                 <td>{{fornecedor.cnpj}}</td>
-                <td>{{fornecedor.nome}}</td>  
+                <td>{{fornecedor.nome}}</td>
                 <td>{{fornecedor.email}}</td>
-                <td></td>
+                <td class="text-center"><button class="btn btn-sm btn-warning mr-1" [routerLink]="['/fornecedores',fornecedor.id]"><img src="/assets/pencil.svg" alt=""
+                            height="10px"></button><button class="btn btn-sm btn-danger" mat-button (click)="openDialog(fornecedor.id)"><img src="/assets/delete.svg"
+                            alt="" height="10px"></button></td>
             </tr>
 
         </tbody>

@@ -1,76 +1,69 @@
 {
-    "produtos": [
-        {
-            "id": 1,
-            "nome": "Whey Isolado 1kg",
-            "descricao": "O alimento é utilizado para promover a síntese de proteínas musculares e o aumento da massa muscular magra, quando utilizado em paralelo às atividades físicas de resistência. Portanto, o Whey Protein é geralmente utilizado como um suplemento por pessoas que praticam esportes.",
-            "produtoUnidadeMedida": "UN",
-            "valor": 10.00
-        },
-        {
-            "id": 2,
-            "nome": "Creatina 500g",
-            "descricao": "A creatina é um suplemento muito utilizado e ela pode ser tomada antes ou depois dos treinos. A creatina no pré-treino favorece mais a hipertrofia; já no pós-treino, ela passa a ajudar na recuperação do glicogênio muscular (mais interessante para quem treina mais de uma vez ao dia).",
-            "produtoUnidadeMedida": "UN",
-            "valor": 20.00
-        },
-        {
-            "id": 3,
-            "nome": "MaltoDextrina 1kg",
-            "descricao": "Malto é um suplemento desenvolvido especialmente para auxiliar as pessoas a terem mais energia para queimar durante os treinos físicos. Por isso, é muito comum que os profissionais da área de saúde e nutrição indiquem o seu consumo para atletas e pessoas que praticam exercícios físicos.   ",
-            "produtoUnidadeMedida": "UN",
-            "valor": 30.00
-        },
-        {
-            "id": 4,
-            "nome": "Hipercalorico 1kg",
-            "descricao": "O hipercalórico é muito indicado para quem busca volume muscular e mais energia para enfrentar os treinos diários. Esse produto oferece uma boa união de nutrientes importantes para o organismo, como carboidratos, proteínas e gorduras.",
-            "produtoUnidadeMedida": "UN",
-            "valor": 25.00
-        },
-        {
-            "id": 5,
-            "nome": "Cafeína 500g",
-            "descricao": "Cafeina anidra é um estimulante mundialmente conhecido,e é classificada do grupo das xantinas, do qual é encontrado em diversas bebidas e algumas plantas. O produto é famoso por seu efeito estimulante, favorecendo maior disposição mental e física e logo melhorando a performance de atletas.",
-            "produtoUnidadeMedida": "UN",
-            "valor": 11.00
-        }
-    ],
-     "fornecedores": [
-        {
-            "id": 1,
-            "cnpj": "30616744000104",
-            "nome": "Growth LTDA",
-            "telefone": "11991718492",
-            "email": "growth@growh.com"
-        },
-        {
-            "id": 2,
-            "cnpj": "51409890000120",
-            "nome": "Mith Suplementos",
-            "telefone": "11991236492",
-            "email": "mith@mith.com"
-        },
-        {
-            "id": 3,
-            "cnpj": "39518541000141",
-            "nome": "Bionutri",
-            "telefone": "11927696492",
-            "email": "bionutri@bionutri.com"
-        },
-        {
-            "id": 4,
-            "cnpj": "51529360000116",
-            "nome": "Full nutrition",
-            "telefone": "11997516352",
-            "email": "fullnutrition@fullnutri.com"
-        },
-        {
-            "id": 5,
-            "cnpj": "99134184000140",
-            "nome": "Body Action",
-            "telefone": "11997516492",
-            "email": "bodyaction@bodyaction.com"
-        }
-    ]
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Whey Isolado 1kg",
+      "descricao": "O alimento é utilizado para promover a síntese de proteínas musculares e o aumento da massa muscular magra, quando utilizado em paralelo às atividades físicas de resistência. Portanto, o Whey Protein é geralmente utilizado como um suplemento por pessoas que praticam esportes.",
+      "produtoUnidadeMedida": "UN",
+      "valor": 10
+    },
+    {
+      "id": 2,
+      "nome": "Creatina 500g",
+      "descricao": "A creatina é um suplemento muito utilizado e ela pode ser tomada antes ou depois dos treinos. A creatina no pré-treino favorece mais a hipertrofia; já no pós-treino, ela passa a ajudar na recuperação do glicogênio muscular (mais interessante para quem treina mais de uma vez ao dia).",
+      "produtoUnidadeMedida": "UN",
+      "valor": 20
+    },
+    {
+      "id": 3,
+      "nome": "MaltoDextrina 1kg",
+      "descricao": "Malto é um suplemento desenvolvido especialmente para auxiliar as pessoas a terem mais energia para queimar durante os treinos físicos. Por isso, é muito comum que os profissionais da área de saúde e nutrição indiquem o seu consumo para atletas e pessoas que praticam exercícios físicos.   ",
+      "produtoUnidadeMedida": "UN",
+      "valor": 30
+    },
+    {
+      "id": 4,
+      "nome": "Hipercalorico 1kg",
+      "descricao": "O hipercalórico é muito indicado para quem busca volume muscular e mais energia para enfrentar os treinos diários. Esse produto oferece uma boa união de nutrientes importantes para o organismo, como carboidratos, proteínas e gorduras.",
+      "produtoUnidadeMedida": "UN",
+      "valor": 25
+    },
+    {
+      "id": 5,
+      "nome": "Cafeína 500g",
+      "descricao": "Cafeina anidra é um estimulante mundialmente conhecido,e é classificada do grupo das xantinas, do qual é encontrado em diversas bebidas e algumas plantas. O produto é famoso por seu efeito estimulante, favorecendo maior disposição mental e física e logo melhorando a performance de atletas.",
+      "produtoUnidadeMedida": "UN",
+      "valor": 11
+    }
+  ],
+  "fornecedores": [
+    {
+      "id": 1,
+      "cnpj": "51409890000120",
+      "nome": "Mith Suplementos",
+      "telefone": "11991236492",
+      "email": "mith@mith.com"
+    },
+    {
+      "id": 2,
+      "cnpj": "51409890000120",
+      "nome": "Mith Suplementos",
+      "telefone": "11991236492",
+      "email": "mith@mith.com"
+    },
+    {
+      "id": 3,
+      "cnpj": "51409890000120",
+      "nome": "Mith Suplementos",
+      "telefone": "11991236492",
+      "email": "mith@mith.com"
+    },
+    {
+      "id": 4,
+      "cnpj": "51409890000120",
+      "nome": "Mith Suplementos",
+      "telefone": "11991236492",
+      "email": "mith@mith.com"
+    }
+  ]
 }

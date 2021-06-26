@@ -6,6 +6,8 @@ import { Fornecedor } from "./fornecedor";
 @Injectable()
 export class FornecedorService{
 
+    status:string="";
+
     constructor(private http: HttpClient){
 
     }
@@ -16,8 +18,12 @@ export class FornecedorService{
         return this.http.get<Fornecedor[]>(this.UrlServiceV1 + "fornecedores");
     }
 
-    // obterFornecedor(id : number) : Observable<Fornecedor>{
-    //     return this.http.get<Fornecedor>(this.UrlServiceV1 + "fornecedores/" + id);
-    // }
+    excluirFornecedor(id : number):void{
+        this.http.delete(this.UrlServiceV1 + "fornecedores/" + id).subscribe();
+    }
+
+    obterFornecedor(id : number) : Observable<Fornecedor>{
+        return this.http.get<Fornecedor>(this.UrlServiceV1 + "fornecedores/" + id);
+    }
 
 }

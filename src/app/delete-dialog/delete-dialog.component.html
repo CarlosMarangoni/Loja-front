@@ -1,0 +1,10 @@
+<h2 mat-dialog-title>Certeza que deseja excluir?</h2>
+<mat-dialog-content class="mat-typography">
+
+  <p>Tem certeza que deseja excluir <b>{{data.fornecedor.nome}}?</b></p>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button class="btn btn-secondary mr-3" mat-button mat-dialog-close>Cancelar</button>
+  <button class="btn btn-danger" mat-button [mat-dialog-close]="true" cdkFocusInitial>Excluir</button>
+</mat-dialog-actions>
