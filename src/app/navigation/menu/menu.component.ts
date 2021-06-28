@@ -20,7 +20,7 @@ export class MenuComponent {
     },
     {
       name:'Produtos',
-      link:'/produtos'
+      link:'/cliente/produtos'
     }
   ]  
 

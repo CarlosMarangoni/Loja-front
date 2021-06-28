@@ -8,8 +8,8 @@ import { NewSupplierComponent } from "./new-supplier/new-supplier.component"
 export const rootRouterConfig: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'home', component: HomeComponent },
-    { path: 'produtos', component: ListProductComponent},
-    { path: 'produtos/:id', component: DetailProductComponent},
+    { path: 'cliente/produtos', component: ListProductComponent},
+    { path: 'cliente/produtos/:id', component: DetailProductComponent},
     { path: 'fornecedores', component: ListSuppliersComponent},
     { path: 'fornecedores/:id', component: NewSupplierComponent},
     { path: 'fornecedores/novo', component: NewSupplierComponent}
