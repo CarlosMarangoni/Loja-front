@@ -4,24 +4,25 @@
         <form #userPost="ngForm" (ngSubmit)="onSubmit(userPost.value)">
             <div class="fields mt-5 ml-3">
 
+                <input type="hidden" name="id" ngModel>
                 <mat-form-field>
                     <mat-label>CNPJ</mat-label>
-                    <input ngModel matInput required>
+                    <input name="cnpj" ngModel matInput required>
                 </mat-form-field>
                 <br>
                 <mat-form-field>
                     <mat-label>Nome</mat-label>
-                    <input ngModel matInput required>
+                    <input name="nome" ngModel matInput required>
                 </mat-form-field>
                 <br>
                 <mat-form-field>
                     <mat-label>Telefone</mat-label>
-                    <input ngModel matInput required>
+                    <input name="telefone" ngModel matInput required>
                 </mat-form-field>
                 <br>
                 <mat-form-field>
                     <mat-label>Email</mat-label>
-                    <input ngModel type="email" placeholder="Ex. pat@example.com" matInput required>
+                    <input name="email" ngModel type="email" placeholder="Ex. pat@example.com" matInput required>
                 </mat-form-field>
                 <br>
 

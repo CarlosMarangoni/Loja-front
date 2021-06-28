@@ -5,6 +5,7 @@ export class Fornecedor{
     telefone: string;
     email:string;    
 
+
     constructor(cnpj: string, telefone: string,nome:string,id:number,email:string){
         this.id=id;
         this.nome=nome;
