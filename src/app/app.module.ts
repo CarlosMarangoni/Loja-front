@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatMenuModule } from '@angular/material/menu'
 import { MatDialogModule } from '@angular/material/dialog'
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { ReactiveFormsModule } from '@angular/forms'
 import { MatFormFieldModule } from '@angular/material/form-field'
 import { MatInputModule } from '@angular/material/input'
 import { FormsModule } from '@angular/forms'
@@ -19,7 +20,6 @@ import { ProdutoService } from './produtos/produtos.service';
 import { FornecedorService } from './fornecedores/fornecedores.service';
 import { DetailProductComponent } from './detail-product/detail-product.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { DetailSupplierComponent } from './detail-supplier/detail-supplier.component';
 import { DeleteDialogComponent } from './delete-dialog/delete-dialog.component';
 import { NewSupplierComponent } from './new-supplier/new-supplier.component';
 
@@ -31,7 +31,6 @@ import { NewSupplierComponent } from './new-supplier/new-supplier.component';
     ListProductComponent,
     ListSuppliersComponent,
     DetailProductComponent,
-    DetailSupplierComponent,
     DeleteDialogComponent,
     NewSupplierComponent
   ],
@@ -42,6 +41,7 @@ import { NewSupplierComponent } from './new-supplier/new-supplier.component';
     BrowserAnimationsModule,
     MatMenuModule,
     MatDialogModule,
+    ReactiveFormsModule,
     MatSnackBarModule,
     MatFormFieldModule,
     MatInputModule,

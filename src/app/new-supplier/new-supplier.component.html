@@ -1,28 +1,30 @@
 <div class="container main-container">
     <div class="fields-container">
+        <div class="header d-flex justify-content-between">
         <div class="mt-3">Cadastro de Fornecedores</div>
-        <form #userPost="ngForm" (ngSubmit)="onSubmit(userPost.value)">
+        <div class="btn btn-primary" [routerLink]="['/fornecedores']">Voltar</div></div>
+        <form [formGroup]="formFornecedor" (ngSubmit)="onSubmit()">
             <div class="fields mt-5 ml-3">
 
-                <input type="hidden" name="id" ngModel>
+                <input type="hidden" formControlName="id">
                 <mat-form-field>
                     <mat-label>CNPJ</mat-label>
-                    <input name="cnpj" ngModel matInput required>
+                    <input matInput required formControlName="cnpj">
                 </mat-form-field>
                 <br>
                 <mat-form-field>
                     <mat-label>Nome</mat-label>
-                    <input name="nome" ngModel matInput required>
+                    <input matInput required formControlName="nome">
                 </mat-form-field>
                 <br>
                 <mat-form-field>
                     <mat-label>Telefone</mat-label>
-                    <input name="telefone" ngModel matInput required>
+                    <input matInput required formControlName="telefone">
                 </mat-form-field>
                 <br>
                 <mat-form-field>
                     <mat-label>Email</mat-label>
-                    <input name="email" ngModel type="email" placeholder="Ex. pat@example.com" matInput required>
+                    <input formControlName="email" type="email" placeholder="Ex. pat@example.com" matInput required>
                 </mat-form-field>
                 <br>
 

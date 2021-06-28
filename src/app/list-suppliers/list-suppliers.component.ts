@@ -4,6 +4,7 @@ import { DeleteDialogComponent } from '../delete-dialog/delete-dialog.component'
 import { Fornecedor } from '../fornecedores/fornecedor';
 import { FornecedorService } from '../fornecedores/fornecedores.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'app-list-suppliers',
@@ -15,7 +16,7 @@ export class ListSuppliersComponent implements OnInit {
 
   public fornecedores: Fornecedor[] | undefined;
 
-  constructor(private fornecedorService: FornecedorService, public dialog: MatDialog, private snackBar: MatSnackBar) {
+  constructor(private fornecedorService: FornecedorService, public dialog: MatDialog, private snackBar: MatSnackBar,private _router:Router) {
     this.fornecedorService = fornecedorService;
   }
 
@@ -56,9 +57,12 @@ export class ListSuppliersComponent implements OnInit {
         });
       });
 
+     
 
   }
 
-
+  edit(id:number){
+    this._router.navigate(['/fornecedores', id]);
+  }
 
 }

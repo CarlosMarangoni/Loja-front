@@ -39,17 +39,17 @@
   "fornecedores": [
     {
       "id": 1,
-      "cnpj": "51409890000120",
+      "cnpj": "21409890000120",
       "nome": "Mith Suplementos",
       "telefone": "11991236492",
       "email": "mith@mith.com"
     },
     {
-      "id": 2,
-      "cnpj": "51409890000120",
+      "cnpj": "11409890000120",
       "nome": "Mith Suplementos",
       "telefone": "11991236492",
-      "email": "mith@mith.com"
+      "email": "mith@mith.com",
+      "id": 2
     },
     {
       "id": 3,
@@ -73,11 +73,11 @@
       "email": "mith@mith.com"
     },
     {
+      "id": 6,
       "cnpj": "51409890000120",
       "nome": "Mith Suplementos",
       "telefone": "11991236492",
-      "email": "mith@mith.com",
-      "id": 6
+      "email": "mith@mith.com"
     },
     {
       "cnpj": "51409890000120",
@@ -87,18 +87,11 @@
       "id": 7
     },
     {
-      "id": 8,
-      "cnpj": "123144",
-      "nome": "a",
-      "telefone": "1231245",
-      "email": "adm@adm.com"
-    },
-    {
       "id": 9,
-      "cnpj": "123144",
-      "nome": "a",
-      "telefone": "1231245",
-      "email": "adm@adm.com"
+      "cnpj": "1231243",
+      "nome": "12312",
+      "telefone": "123124",
+      "email": "teste@a.com"
     }
   ]
 }

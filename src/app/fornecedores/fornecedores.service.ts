@@ -30,4 +30,8 @@ export class FornecedorService {
         return this.http.post<Fornecedor>(this.UrlServiceV1 + "fornecedores", fornecedor).toPromise().then(data => { console.log(data) });
     }
 
+    editarFornecedor(fornecedor: Fornecedor,id:number) {
+        return this.http.put<Fornecedor>(this.UrlServiceV1 + "fornecedores/" + id, fornecedor).toPromise().then(data => { console.log(data) });
+    }
+
 }
