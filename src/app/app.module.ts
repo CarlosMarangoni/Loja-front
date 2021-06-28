@@ -5,6 +5,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatMenuModule } from '@angular/material/menu'
 import { MatDialogModule } from '@angular/material/dialog'
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatFormFieldModule } from '@angular/material/form-field'
+import { MatInputModule } from '@angular/material/input'
+import { FormsModule } from '@angular/forms'
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './navigation/menu/menu.component';
@@ -18,6 +21,7 @@ import { DetailProductComponent } from './detail-product/detail-product.componen
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DetailSupplierComponent } from './detail-supplier/detail-supplier.component';
 import { DeleteDialogComponent } from './delete-dialog/delete-dialog.component';
+import { NewSupplierComponent } from './new-supplier/new-supplier.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +32,8 @@ import { DeleteDialogComponent } from './delete-dialog/delete-dialog.component';
     ListSuppliersComponent,
     DetailProductComponent,
     DetailSupplierComponent,
-    DeleteDialogComponent
+    DeleteDialogComponent,
+    NewSupplierComponent
   ],
   imports: [
     BrowserModule,
@@ -37,12 +42,17 @@ import { DeleteDialogComponent } from './delete-dialog/delete-dialog.component';
     BrowserAnimationsModule,
     MatMenuModule,
     MatDialogModule,
-    MatSnackBarModule
-  ],
+    MatSnackBarModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule
+    ],
   exports:[
     MatMenuModule,
     MatDialogModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [
     ProdutoService,

@@ -1,0 +1,33 @@
+<div class="container main-container">
+    <div class="fields-container">
+        <div class="mt-3">Cadastro de Fornecedores</div>
+        <form #userPost="ngForm" (ngSubmit)="onSubmit(userPost.value)">
+            <div class="fields mt-5 ml-3">
+
+                <mat-form-field>
+                    <mat-label>CNPJ</mat-label>
+                    <input ngModel matInput required>
+                </mat-form-field>
+                <br>
+                <mat-form-field>
+                    <mat-label>Nome</mat-label>
+                    <input ngModel matInput required>
+                </mat-form-field>
+                <br>
+                <mat-form-field>
+                    <mat-label>Telefone</mat-label>
+                    <input ngModel matInput required>
+                </mat-form-field>
+                <br>
+                <mat-form-field>
+                    <mat-label>Email</mat-label>
+                    <input ngModel type="email" placeholder="Ex. pat@example.com" matInput required>
+                </mat-form-field>
+                <br>
+
+                <button class="btn btn-primary" type="submit">Salvar</button>
+
+            </div>
+        </form>
+    </div>
+</div>

@@ -4,26 +4,30 @@ import { Observable } from "rxjs";
 import { Fornecedor } from "./fornecedor";
 
 @Injectable()
-export class FornecedorService{
+export class FornecedorService {
 
-    status:string="";
+    status: string = "";
 
-    constructor(private http: HttpClient){
+    constructor(private http: HttpClient) {
 
     }
 
-    protected UrlServiceV1:string = "http://localhost:3000/";
+    protected UrlServiceV1: string = "http://localhost:3000/";
 
-    obterFornecedores() : Observable<Fornecedor[]>{
+    obterFornecedores(): Observable<Fornecedor[]> {
         return this.http.get<Fornecedor[]>(this.UrlServiceV1 + "fornecedores");
     }
 
-    excluirFornecedor(id : number):void{
+    excluirFornecedor(id: number): void {
         this.http.delete(this.UrlServiceV1 + "fornecedores/" + id).subscribe();
     }
 
-    obterFornecedor(id : number) : Observable<Fornecedor>{
+    obterFornecedor(id: number): Observable<Fornecedor> {
         return this.http.get<Fornecedor>(this.UrlServiceV1 + "fornecedores/" + id);
+    }
+
+    salvarFornecedor(fornecedor: Fornecedor) {
+        return this.http.post<Fornecedor>(this.UrlServiceV1 + "fornecedores", fornecedor).toPromise().then(data => { console.log(data) });
     }
 
 }

@@ -1,13 +1,14 @@
 <div class="container main-container">
     <div><span>Cadastrar Fornecedores</span></div>
-    <div>
-        <form action="">
+    <div class="d-flex">
+        
             <input type="text" placeholder="Que fornecedor está procurando?">
-            <button type="submit"></button>
-        </form>
+            <button class="btn btn-sm btn-secondary ml-1" type="submit" >A</button>
+
+            <button class="btn btn-sm btn-success ml-auto" type="submit" [routerLink]="['/cadastrar/fornecedor']">+</button>
     </div>
 
-    <table class="table table-bordered">
+    <table class="table table-bordered mt-1">
         <thead>
             <tr>
                 <th>Código</th>
