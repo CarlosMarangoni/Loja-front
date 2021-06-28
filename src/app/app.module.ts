@@ -22,6 +22,7 @@ import { DetailProductComponent } from './detail-product/detail-product.componen
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DeleteDialogComponent } from './delete-dialog/delete-dialog.component';
 import { NewSupplierComponent } from './new-supplier/new-supplier.component';
+import { ListProductAdminComponent } from './list-product-admin/list-product-admin.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { NewSupplierComponent } from './new-supplier/new-supplier.component';
     ListSuppliersComponent,
     DetailProductComponent,
     DeleteDialogComponent,
-    NewSupplierComponent
+    NewSupplierComponent,
+    ListProductAdminComponent
   ],
   imports: [
     BrowserModule,

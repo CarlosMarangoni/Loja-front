@@ -4,7 +4,7 @@
     <div class="row text-center">
         <div *ngFor="let produto of produtos" class="col-md-3" style="padding-bottom: 30px;">
             <div class="card h-100">
-                <a class="text-decoration-none" [routerLink]="['/produtos',produto.id]">
+                <a class="text-decoration-none" [routerLink]="['/cliente/produtos',produto.id]">
                 <h4 class="card-title"> {{produto.nome}}</h4>
             </a>
                 <div class="card-body">                    

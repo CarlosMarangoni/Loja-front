@@ -32,16 +32,9 @@ export class ListSuppliersComponent implements OnInit {
   }
 
   openDialog(fornecedorId: number) {
-    fornecedor: Fornecedor;
 
-    this.fornecedorService.obterFornecedor(fornecedorId).subscribe(
-      supplier => {
-        supplier = supplier;
-        const dialogRef = this.dialog.open(DeleteDialogComponent, {
-          data: {
-            fornecedor: supplier
-          }
-        });
+    
+        const dialogRef = this.dialog.open(DeleteDialogComponent);
 
 
         dialogRef.afterClosed().subscribe(result => {
@@ -55,7 +48,6 @@ export class ListSuppliersComponent implements OnInit {
             })
           }
         });
-      });
 
      
 

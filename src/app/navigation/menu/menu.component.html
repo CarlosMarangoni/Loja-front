@@ -17,7 +17,7 @@
             <a class="btn dropdown-toggle" mat-button [matMenuTriggerFor]="menu">Cadastrar</a>
             <mat-menu #menu="matMenu">
                 <a mat-menu-item [routerLink] ="['/fornecedores']">Fornecedores</a>
-                <a mat-menu-item>Produtos</a>
+                <a mat-menu-item [routerLink] ="['/produtos']">Produtos</a>
             </mat-menu>
             <a class="btn login-btn">Login</a>
         </div>

@@ -1,15 +1,10 @@
 export class Produto{
-    id:number;
-    nome:string;
-    descricao:string;
-    valor: number;
+    id:number=0;
+    nome:string="";
+    unidadeMedida:string="";
+    descricao:string="";
+    valor: number=0;
 
-    constructor(descricao: string, valor: number,nome:string,id:number){
-        this.id=id;
-        this.nome=nome;
-        this.descricao=descricao;
-        this.valor=valor;
-    }
-
+    
     
 }

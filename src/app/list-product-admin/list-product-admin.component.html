@@ -1,0 +1,39 @@
+<div class="container main-container">
+    <div><span>Cadastrar Produtos</span></div>
+    <div class="d-flex">
+        
+            <input type="text" placeholder="Que produto está procurando?">
+            <button class="btn btn-sm btn-secondary ml-1" type="submit" >A</button>
+
+            <button class="btn btn-sm btn-success ml-auto" type="submit" [routerLink]="['/produtos/novo']">+</button>
+    </div>
+
+    <table class="table table-bordered mt-1">
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Nome</th>
+                <th>UM</th>
+                <th>Preço</th>
+                <th>#</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let produto of produtos">
+                <td>{{produto.id}}</td>
+                <td>{{produto.nome}}</td>
+                <td>{{produto.unidadeMedida}}</td>
+                <td>{{produto.valor}}</td>
+                <td class="text-center"><button class="btn btn-sm btn-warning mr-1" (click)="edit(produto.id)"><img src="/assets/pencil.svg" alt=""
+                            height="10px"></button><button class="btn btn-sm btn-danger" mat-button (click)="openDialog(produto.id)"><img src="/assets/delete.svg"
+                            alt="" height="10px"></button></td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+
+
+</div>

@@ -20,4 +20,8 @@ export class ProdutoService{
         return this.http.get<Produto>(this.UrlServiceV1 + "produtos/" + id);
     }
 
+    excluirProduto(id: number): void {
+        this.http.delete(this.UrlServiceV1 + "produtos/" + id).subscribe();
+    }
+
 }
